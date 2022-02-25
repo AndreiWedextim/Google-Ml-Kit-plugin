@@ -17,11 +17,6 @@ public class GoogleMlKitPlugin implements FlutterPlugin {
     private MethodChannel channel;
     private static String channelName = "google_ml_kit";
 
-    public static void registerWith(Registrar registrar) {
-        final MethodChannel channel = new MethodChannel(registrar.messenger(), channelName);
-        channel.setMethodCallHandler(new MlKitMethodCallHandler(registrar.context()));
-    }
-
     @Override
     public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
         channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), channelName);
