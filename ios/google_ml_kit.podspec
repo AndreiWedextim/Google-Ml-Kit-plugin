@@ -19,8 +19,6 @@ flutter plugin for google ml kit
   # mlkit vision
   s.dependency 'GoogleMLKit/FaceDetection', '~> 2.2.0'
   s.dependency 'GoogleMLKit/TextRecognition', '~> 2.2.0'
-  # mlkit nlp
-  s.dependency 'GoogleMLKit/LanguageID', '~> 2.2.0'
   s.platform                = :ios, '10.0'
   s.ios.deployment_target   = '10.0'
   s.static_framework = true
